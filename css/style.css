@@ -27,11 +27,21 @@ header {
     background-color: lightgray
 }
 
-.fa-solid .fa-down-to-bracket {
-    color: black;
-    width: 5px;
-    height: 5px;
+.content-title {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    width: 80%;
 }
+
+.content-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+    width: 100%;
+}
+    
+
     /* Regole centralizzate buttons */
     .btn {
         border-radius: 20px;
@@ -59,7 +69,7 @@ header {
     }
 
     .btn-azure {
-        background-color: rgb(45, 189, 189);
+        background-color: #404eed;
         color: white;
     }
 
@@ -163,6 +173,7 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 4% 0;
     }
 
     .content-container {
@@ -179,11 +190,11 @@ h1 {
     }
 
     .text-block {
-        width: 24%;
+        width: 34%;
         height: 100%;   
     }
 
-    .text-block h4 {
+    /* .text-block h4 {
         margin-top: 40px;
         font-size: 40px;
         line-height: 50px;
@@ -194,14 +205,14 @@ h1 {
         line-height: 28px;
         margin-top: 20px;
         width: 120%;
-    }
+    } */
+
+
 
     /* Blocco contenuti in verticale */
 
     .vertical-content-block {
         width: 100%;
-        background-color: azure;
-        border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -213,13 +224,25 @@ h1 {
     }
 
     .vertical-img-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 60%;
         width: 100%;
+
     }
 
     .vertical-text-block {
         height: 40%;
         width: 100%;
+        text-align: center;
+    }
+
+    .vertical-text-block h3 {
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 50px;
     }
 
     /* Call to action before footer */
@@ -227,17 +250,19 @@ h1 {
     .main-cta {
         width: 70%;
         margin: 0 15%;
-        background-color: azure;
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     .main-cta h5 {
         font-size: 32px;
         font-weight: bold;
+        background-image: url(../img/stars.svg);
+        background-size: 80%;
+        padding: 10px;
     }
 
     .main-cta a {
@@ -250,7 +275,6 @@ h1 {
 footer {
     height: 500px;
     background-color: rgb(56, 52, 52);
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
