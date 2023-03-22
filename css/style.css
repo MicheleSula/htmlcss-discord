@@ -360,6 +360,20 @@ footer {
     margin-bottom: 50px;
 }
 
+.onde-bonus {
+    filter: brightness(0) invert(95%);
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.onde-bonus-reversed {
+    filter: brightness(0) invert(95%);
+    width: 100%;
+    margin: 0;
+    display: block;
+    rotate: 180deg;
+}
 /* DEBUGGING RULES */
 /*
 header {
