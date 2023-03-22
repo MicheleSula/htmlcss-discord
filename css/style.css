@@ -24,24 +24,10 @@ header {
 }
 
 .content-block:nth-of-type(2n+0) {
-    background-color: lightgray
+    background-color: #f2f2f2;
 }
 
-.content-title {
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 50px;
-    width: 80%;
-}
-
-.content-text {
-    font-size: 18px;
-    line-height: 28px;
-    margin-top: 20px;
-    width: 100%;
-}
     
-
     /* Regole centralizzate buttons */
     .btn {
         border-radius: 20px;
@@ -194,20 +180,19 @@ h1 {
         height: 100%;   
     }
 
-    /* .text-block h4 {
+    .content-title {
         margin-top: 40px;
         font-size: 40px;
         line-height: 50px;
+        width: 80%;
     }
-
-    .text-block p {
+    
+    .content-text {
         font-size: 18px;
         line-height: 28px;
         margin-top: 20px;
-        width: 120%;
-    } */
-
-
+        width: 100%;
+    }
 
     /* Blocco contenuti in verticale */
 
@@ -273,7 +258,6 @@ h1 {
 /* - - - - FOOTER - - - - */
 
 footer {
-    height: 500px;
     background-color: rgb(56, 52, 52);
     display: flex;
     flex-direction: column;
@@ -283,19 +267,86 @@ footer {
 
 .footer-content-container {
     display: flex;
+    justify-content: space-between;
     height: 80%;
     width: 65%;
+    margin-top: 60px;
+    font-size: 18px;
 }
+
+
+/* First div with social media links and stuff */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    color: #404eed;
+}
+
+.social-links h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.social-links-bottom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.social-links-bottom img {
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.social-links-text {
+    line-height: 25px;
+    color: white;
+}
+
+.social-links-text img {
+    height: 15px;
+    width: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.social-links-logos {
+    display: flex;
+}
+
+.social-links-logos img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    filter: brightness(0) invert(1);
+    
+}
+
+/* Other rows with redirects to other pages */
 
 .footer-content {
     height: 100%;
-    width: 20%;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+}
+
+.redirects {
+    color: white;
+    list-style-type: none;
+    line-height: 45px;
+}
+
+.redirects > :first-child {
+    color: #404eed;
 }
 
 .content-divider {
     width: 65%;
     height: 2px;
-    background-color: blueviolet;
+    background-color: #404eed;
     margin: 10px 0;
     
 }
@@ -306,7 +357,7 @@ footer {
     align-items: center;
     width: 65%;
     height: 50px;
-    background-color: antiquewhite;
+    margin-bottom: 50px;
 }
 
 /* DEBUGGING RULES */
